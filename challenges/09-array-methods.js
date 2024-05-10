@@ -64,8 +64,11 @@ console.log(survey);
 /////////////////////////////////////////////////////////////////////////////////
 
 /* 1º Exercício - MAP */
-students.map(function (student) {
-  console.log(student);
+const updatedStudents = students.map(function (student) {
+  // console.log(student);
+  // em cada objeto 'student' adicionarei a propriedade 'role' com valor igual a 'student'
   student.role = "student";
+  // por que adicionei o valor desse map de students na constante 'updatedStudents', agora preciso RETORNAR seu valor, caso contrário receberei 'undefined' como resposta
+  return student;
 });
-console.log(students);
+console.log(updatedStudents);
