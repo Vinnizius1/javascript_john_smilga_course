@@ -1,4 +1,4 @@
-// have access to students from data.js
+/* // have access to students from data.js
 
 const updatedStudents = students.map(function (student) {
   // console.log(student);
@@ -59,3 +59,13 @@ const survey = students.reduce(function (survey, student) {
 }, {});
 
 console.log(survey);
+ */
+
+/////////////////////////////////////////////////////////////////////////////////
+
+/* 1º Exercício - MAP */
+students.map(function (student) {
+  console.log(student);
+  student.role = "student";
+});
+console.log(students);
