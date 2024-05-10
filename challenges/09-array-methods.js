@@ -63,7 +63,7 @@ console.log(survey);
 
 /////////////////////////////////////////////////////////////////////////////////
 
-/* 1º Exercício - MAP */
+/* 1º Exercício - MAP - updateStudents*/
 const updatedStudents = students.map(function (student) {
   // console.log(student);
   // em cada objeto 'student' adicionarei a propriedade 'role' com valor igual a 'student'
@@ -72,3 +72,15 @@ const updatedStudents = students.map(function (student) {
   return student;
 });
 console.log(updatedStudents);
+
+/* 2º Exercício - FILTER - highScores */
+const highScores = students.filter(function (student) {
+  return student.score >= 1180;
+  // return student.score >= 80;
+});
+console.log(highScores);
+
+/* 3º Exercício - FIND - specificId */
+const specificId = students.find(student => student.id === 1);
+
+console.log(specificId);
